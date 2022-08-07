@@ -11,6 +11,8 @@
 		C172B9AC289F9AB20069D068 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172B9AB289F9AB20069D068 /* ContentView.swift */; };
 		C172B9AE289F9AB30069D068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C172B9AD289F9AB30069D068 /* Assets.xcassets */; };
 		C172B9B1289F9AB30069D068 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C172B9B0289F9AB30069D068 /* Preview Assets.xcassets */; };
+		C172B9B9289F9B170069D068 /* SimpleTodoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C172B9B7289F9B170069D068 /* SimpleTodoModel.xcdatamodeld */; };
+		C172B9BC289F9BEA0069D068 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172B9BB289F9BEA0069D068 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C172B9AB289F9AB20069D068 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C172B9AD289F9AB30069D068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C172B9B0289F9AB30069D068 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C172B9B8289F9B170069D068 /* SimpleTodoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleTodoModel.xcdatamodel; sourceTree = "<group>"; };
+		C172B9BB289F9BEA0069D068 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,12 @@
 		C172B9A8289F9AB20069D068 /* coredataexample */ = {
 			isa = PBXGroup;
 			children = (
+				C172B9BA289F9BD20069D068 /* Managers */,
 				C172B9A9289F9AB20069D068 /* coredataexampleApp.swift */,
 				C172B9AB289F9AB20069D068 /* ContentView.swift */,
 				C172B9AD289F9AB30069D068 /* Assets.xcassets */,
 				C172B9AF289F9AB30069D068 /* Preview Content */,
+				C172B9B7289F9B170069D068 /* SimpleTodoModel.xcdatamodeld */,
 			);
 			path = coredataexample;
 			sourceTree = "<group>";
@@ -65,6 +71,14 @@
 				C172B9B0289F9AB30069D068 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C172B9BA289F9BD20069D068 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C172B9BB289F9BEA0069D068 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C172B9B9289F9B170069D068 /* SimpleTodoModel.xcdatamodeld in Sources */,
 				C172B9AC289F9AB20069D068 /* ContentView.swift in Sources */,
+				C172B9BC289F9BEA0069D068 /* CoreDataManager.swift in Sources */,
 				C172B9AA289F9AB20069D068 /* coredataexampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +357,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C172B9B7289F9B170069D068 /* SimpleTodoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C172B9B8289F9B170069D068 /* SimpleTodoModel.xcdatamodel */,
+			);
+			currentVersion = C172B9B8289F9B170069D068 /* SimpleTodoModel.xcdatamodel */;
+			path = SimpleTodoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C172B99E289F9AB20069D068 /* Project object */;
 }
